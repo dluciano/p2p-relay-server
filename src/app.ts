@@ -17,7 +17,11 @@ import { createLibp2p } from 'libp2p';
 
 const relay = await createLibp2p({
   addresses: {
-    listen: ['/ip4/127.0.0.1/tcp/0/ws'],
+    listen: [
+	   // '/dns4/p2p.eastus.cloudapp.azure.com/tcp/443/wss', 
+	   // '/dns4/p2p.eastus.cloudapp.azure.com/tcp/80/ws'
+	  '/ip4/4.227.145.88/tcp/8080/ws/'
+    ],
   },
   transports: [webSockets({ filter: filters.all })],
   connectionEncryption: [noise()],
