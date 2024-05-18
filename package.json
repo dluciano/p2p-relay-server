@@ -1,0 +1,28 @@
+{
+  "name": "p2p-relay-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dawlin Pena Luciano",
+  "license": "MIT",
+  "dependencies": {
+    "@chainsafe/libp2p-identify": "^1.0.0",
+    "@chainsafe/libp2p-noise": "^15.0.0",
+    "@chainsafe/libp2p-yamux": "^6.0.2",
+    "@libp2p/circuit-relay-v2": "^1.0.23",
+    "@libp2p/echo": "^1.0.6",
+    "@libp2p/webrtc": "^4.0.32",
+    "@libp2p/websockets": "^8.0.23",
+    "@multiformats/multiaddr": "^12.2.3",
+    "@types/node": "^20.12.12",
+    "libp2p": "^1.5.2",
+    "tslib": "^2.6.2",
+    "tsx": "^4.10.5",
+    "typescript": "^5.2.2"
+  }
+}
