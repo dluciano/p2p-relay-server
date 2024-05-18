@@ -31,5 +31,7 @@ const relay = await createLibp2p({
     relay: circuitRelayServer(),
   },
 });
-
+relay.addEventListener("start", e=>{
+  console.log(e.detail.getMultiaddrs());
+});
 await relay.start();
