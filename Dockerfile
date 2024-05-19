@@ -73,4 +73,4 @@ USER node
 ENTRYPOINT ["/sbin/tini", "--"]
 
 # Run the application
-CMD ["node", "./dist/app.js"]
+CMD ["sh", "-c", "DEBUG=libp2p:* node ./dist/app.js"]

@@ -4,7 +4,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-  serve:
+  server:
+    container_name: server
     image: caddy:2.8-alpine@sha256:6ebff1b74890f4f8c15c62fb151c2ac36ff85d60e40ea5b6df526913f019d781
     restart: unless-stopped
     cap_add:
@@ -15,6 +16,5 @@ services:
       - "443:443/udp"
     volumes:
       - ./server/caddy/Caddyfile:/etc/caddy/Caddyfile
-      - ./server/caddy/srv:/srv
-      - ./server/caddy/data:/data
+      - ./server/caddy/srv:/usr/share/caddy
       - ./server/caddy/config:/config
