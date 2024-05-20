@@ -49,7 +49,7 @@ FROM base as prod
 # Copy dependencies
 COPY --from=prod-deps $HOME/app/node_modules $HOME/app/node_modules
 COPY --from=build $HOME/app/dist $HOME/app/dist
-
+COPY default.env $HOME/app/default.env
 WORKDIR $HOME/app
 
 # Expose port

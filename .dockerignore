@@ -3,3 +3,4 @@
 !package.json
 !pnpm-lock.yaml
 !tsconfig.json
+!default.env

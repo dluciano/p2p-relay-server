@@ -4,6 +4,12 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    env_file:
+      - path: ./default.env
+        required: true
+      - path: .env.local
+        required: false
+
   server:
     container_name: server
     image: caddy:2.8-alpine@sha256:6ebff1b74890f4f8c15c62fb151c2ac36ff85d60e40ea5b6df526913f019d781

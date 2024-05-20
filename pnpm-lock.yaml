@@ -23,9 +23,6 @@ importers:
       '@libp2p/logger':
         specifier: ^4.0.12
         version: 4.0.12
-      '@libp2p/peer-id-factory':
-        specifier: ^4.1.1
-        version: 4.1.1
       '@libp2p/tcp':
         specifier: ^9.0.25
         version: 9.0.25
